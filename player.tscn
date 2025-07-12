@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://b0wysm6c2nqgj"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_26y8w"]
+[ext_resource type="Script" uid="uid://bff4evm16ro7l" path="res://player.gd" id="1_26y8w"]
 [ext_resource type="Texture2D" uid="uid://fn3ats00hpd7" path="res://assets/sokoban_character.png" id="2_47llq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tia2a"]
@@ -72,10 +72,10 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e3qh4"]
 _data = {
-"down": SubResource("Animation_c7mrc"),
-"left": SubResource("Animation_88f3v"),
-"right": SubResource("Animation_7vjps"),
-"up": SubResource("Animation_1mx5g")
+&"down": SubResource("Animation_c7mrc"),
+&"left": SubResource("Animation_88f3v"),
+&"right": SubResource("Animation_7vjps"),
+&"up": SubResource("Animation_1mx5g")
 }
 
 [node name="Player" type="Area2D"]
@@ -96,5 +96,5 @@ collide_with_areas = true
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../RayCast2d")
 libraries = {
-"": SubResource("AnimationLibrary_e3qh4")
+&"": SubResource("AnimationLibrary_e3qh4")
 }
